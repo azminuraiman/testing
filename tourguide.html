@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A&A Tour Guide</title>
+	<meta name="description" content="Perkhidmatan tour guide untuk penerokaan destinasi pilihan anda.">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header class="navbar">
+		<a class="logo" href="#">A&A<span>Travel</span></a>
+
+		<button class="menu-button" aria-label="Buka menu" aria-expanded="false">
+			☰
+		</button>
+
+		<nav class="nav-links">
+			<a href="#home">Laman Utama</a>
+			<a href="#destinations">Destinasi</a>
+			<a href="#packages">Pakej</a>
+			<a href="#contact">Hubungi</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero" id="home">
+			<div class="hero-content">
+				<p class="tagline">Teroka Dunia Bersama Kami</p>
+				<h1>Pengalaman perjalanan yang tidak dapat dilupakan</h1>
+				<p>
+					Terokai destinasi menarik dengan panduan tempatan yang mesra,
+					berpengalaman dan boleh dipercayai.
+				</p>
+				<a class="button" href="#packages">Lihat Pakej</a>
+			</div>
+		</section>
+
+		<section class="section" id="destinations">
+			<div class="section-heading">
+				<p class="tagline">Destinasi Popular</p>
+				<h2>Pilih Pengalaman Anda</h2>
+			</div>
+
+			<div class="destination-grid">
+				<article class="card">
+					<img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f41" alt="Pemandangan bandar di Malaysia">
+					<div class="card-content">
+						<h3>Labuan island</h3>
+						<p>Lawati mercu tanda moden, pasar malam dan tempat makanan popular.</p>
+					</div>
+				</article>
+
+				<article class="card">
+					<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Pantai dengan laut biru">
+					<div class="card-content">
+						<h3>Pulau & Pantai</h3>
+						<p>Nikmati laut biru, aktiviti air dan pemandangan matahari terbenam.</p>
+					</div>
+				</article>
+
+				<article class="card">
+					<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Pemandangan gunung">
+					<div class="card-content">
+						<h3>Pengembaraan Alam</h3>
+						<p>Jelajah hutan, mendaki bukit dan alami keindahan alam semula jadi.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section packages" id="packages">
+			<div class="section-heading">
+				<p class="tagline">Pakej Pilihan</p>
+				<h2>Perjalanan Sesuai Untuk Anda</h2>
+			</div>
+
+			<div class="destination-grid">
+				<article class="package-card">
+					<h3>Pakej Bandar</h3>
+					<p class="price">RM150 <span>/ orang</span></p>
+					<ul>
+						<li>Lawatan 4 jam</li>
+						<li>2–8 peserta</li>
+						<li>Pemandu pelancong</li>
+					</ul>
+					<button class="button package-button" data-package="Pakej Bandar">Tempah Sekarang</button>
+				</article>
+
+				<article class="package-card featured">
+					<h3>Pakej Lengkap</h3>
+					<p class="price">RM350 <span>/ orang</span></p>
+					<ul>
+						<li>Lawatan sehari penuh</li>
+						<li>Makan tengah hari</li>
+						<li>Pengangkutan disediakan</li>
+					</ul>
+					<button class="button package-button" data-package="Pakej Lengkap">Tempah Sekarang</button>
+				</article>
+
+				<article class="package-card">
+					<h3>Pakej Peribadi</h3>
+					<p class="price">RM500 <span>/ kumpulan</span></p>
+					<ul>
+						<li>Ikut jadual anda</li>
+						<li>Destinasi pilihan</li>
+						<li>Khidmat eksklusif</li>
+					</ul>
+					<button class="button package-button" data-package="Pakej Peribadi">Tempah Sekarang</button>
+				</article>
+			</div>
+		</section>
+
+		<section class="section contact" id="contact">
+			<div class="section-heading">
+				<p class="tagline">Hubungi Kami</p>
+				<h2>Rancang Perjalanan Anda</h2>
+			</div>
+
+			<form id="booking-form">
+				<input type="text" name="name" placeholder="Nama anda" required>
+				<input type="email" name="email" placeholder="Emel anda" required>
+				<input type="tel" name="phone" placeholder="Nombor telefon" required>
+				<select name="package" id="package-select" required>
+					<option value="">Pilih pakej</option>
+					<option value="Pakej Bandar">Pakej Bandar</option>
+					<option value="Pakej Lengkap">Pakej Lengkap</option>
+					<option value="Pakej Peribadi">Pakej Peribadi</option>
+				</select>
+				<textarea name="message" placeholder="Maklumat tambahan" rows="5"></textarea>
+				<button class="button" type="submit">Hantar Permintaan</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 A&ATravel. Hak cipta terpelihara.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
